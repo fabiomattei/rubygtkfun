@@ -33,4 +33,4 @@ puts app.run
 
 If you typed the code correctly and the gtk gem was well installed you should be seeing something like this:
 
-![My first window](/images/posts/warming-up.png){:class="aside-image"}
+![My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
