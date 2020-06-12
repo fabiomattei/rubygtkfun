@@ -1,6 +1,10 @@
+---
+layout: home
+---
+
 # Try page
 
-My page content Fabio
+My page content
 
 Adding some more content
 
