@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
@@ -14,6 +14,6 @@ I thing ruby has the potential to be a good language for desktop applications bu
 
 I am not an expert in Gtk but somebody says that there is not better way to learn something than teach it, so I thought it would be a good idea starting a blog about the path I am following.
 
-I have just written the first article of my blog and I fell so excited!
+I have just written the first article of my blog and I feel so excited!
 
 Let's start!
