@@ -44,7 +44,7 @@ Now we can run it:
 {% endhighlight %}
 
 If you typed the code correctly and the gtk gem was well installed you should be seeing something that looks like the aside image.
-You did well, the application is running and you build your first ruby gtk application.
+You did well, the application is running and you build your first ruby gtk3 application.
 
 **Congratulations!!**
 
@@ -73,7 +73,7 @@ The initializer takes two parameters:
 * :flags_none: this is a flag defining the behavior of the application. In our case, we used the default behavior. [There are many types of application you can define](https://lazka.github.io/pgi-docs/GObject-2.0/flags.html#GObject.GFlags). 
 
 ### Third code block
-The following block of code connect the application [signal](http://ruby-gnome.sourceforge.net/programming/signal.html) named **activate** to the following commands. Gtk library is driven by signals. Gtk programming consists, in large part, in setting signals handlers. When the **activate** signal is received the following lines of code create a new window, give to this window a title and a size and show the window.
+The following block of code connects the application [signal](http://ruby-gnome.sourceforge.net/programming/signal.html) named **activate** to the following commands. Gtk library is driven by signals. Gtk programming consists, in large part, in setting signals handlers. When the **activate** signal is received the following lines of code create a new window, give to this window a title and a size and show the window.
 
 {% highlight ruby %}
 app.signal_connect "activate" do |application|
@@ -86,7 +86,7 @@ end
 
 ### Forth code block
 
-The last instruction runs the application and writes the console output on the terminal.
+Last instruction runs the application and writes the console output on the terminal.
 
 {% highlight ruby %}
 puts app.run

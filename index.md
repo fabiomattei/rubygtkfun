@@ -18,7 +18,7 @@ with Ruby and GTK.
 
 I am going to use Ubuntu 20.04 that installs Ruby version 2.7.0
 
-In order to use the GTK library We need to install the gtk3 gem. We can do that typing in the terminal
+In order to use the GTK library we need to install the gtk3 gem. We can do that typing in the terminal
 {% highlight bash %}
 gem install gtk3
 {% endhighlight %}
