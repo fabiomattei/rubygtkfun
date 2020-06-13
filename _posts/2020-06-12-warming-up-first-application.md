@@ -3,6 +3,7 @@ layout: post
 title:  "Warming up: first application"
 date:   2020-06-12 23:48:17 +0200
 categories: ruby gtk
+tags: helloworld window
 ---
 
 ![My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
