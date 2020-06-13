@@ -43,7 +43,7 @@ Now we can run it:
 
 If you typed the code correctly and the gtk gem was well installed you should be seeing something like this:
 
-[My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
+![My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
 
 It means you did well, the application is running and you build your first ruby gtk application.
 Congratulations!!

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-[Fabio Mattei](/rubygtkfun/images/about/fabio.jpg){:class="aside-image"}
+![Fabio Mattei](/rubygtkfun/images/about/fabio.jpg){:class="aside-image"}
 
 I love ruby and I love the Gnome project!
 
