@@ -7,13 +7,13 @@ categories: ruby gtk
 
 ![My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
 
-If you installed the gtk3 gem using the command:
+Before we sturt just make sure you installed gtk3 gem on your system and type the command:
 
 {% highlight bash %}
 gem install gtk3
 {% endhighlight %}
 
-You are ready to create the first GTK3 application.
+Now you are ready to create the first GTK3 application.
 Create a new file named **warming-up.rb** and type the following commands
 
 {% highlight ruby %}
@@ -33,7 +33,7 @@ end
 puts app.run
 {% endhighlight %}
 
-Now we can give to the file we just created execution privileges:
+We need to give execution privileges to **warming-up.rb**:
 {% highlight bash %}
 chmod +x warming-up.rb
 {% endhighlight %}
@@ -44,23 +44,23 @@ Now we can run it:
 {% endhighlight %}
 
 If you typed the code correctly and the gtk gem was well installed you should be seeing something that looks like the aside image.
-You did well, the application is running and you build your first ruby gtk3 application.
 
 **Congratulations!!**
 
-Let's see what have we type line by line.
+Let's see what have we typed line by line.
 
-The shebang in the first line helps us to define which interpreter must be used to execute the script under UNIX/Linux operating systems.
+### Before we start
+Remember the shebang in the first line helps us to define which interpreter must be used to execute the script under UNIX/Linux operating systems.
 
 ### First code block
-We import the gtk3 library.
+We need to import the gtk3 library.
 
 {% highlight ruby %}
 require "gtk3"
 {% endhighlight %}
 
 ### Second code block
-We initialize a new application writing: 
+We can initialize a new application writing: 
 
 {% highlight ruby %}
 app = Gtk::Application.new("org.rubygtkfun.warmingup", :flags_none)

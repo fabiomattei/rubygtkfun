@@ -32,22 +32,19 @@
 }
 
 @media (min-width: 750px) {
-    .aside-image {
-        float: right;
-	    max-width: 46%;
-    }
+	.aside-image {
+		float: right;
+		max-width: 35%;
+		margin-left: 4%;
+	}
 }
 
 @media (max-width: 749px) {
     .aside-image {
 	    max-width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
     }
-}
-
-.aside-image {
-	float: right;
-	max-width: 35%;
-	margin-left: 4%;
 }
 
 .central-image {
