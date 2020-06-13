@@ -7,11 +7,11 @@ layout: home
 # GTK and Ruby
 
 GTK is the foundation of Gnome environment.
-It is the library that makes possible to create all applications.
+It is the library that makes possible to create all the amazing Gnome applications.
 
-Ruby is the langue that Matz invented and many peoples loves
+Ruby is the language that Yukihiro Matsumoto (aka Matz) designed and many people love.
 
-I am going to use this page in order to take not of all the experiments I am going to make
+I am going to use this page in order to take note of all the experiments I am going to make
 with Ruby and GTK.
 
 ### installation

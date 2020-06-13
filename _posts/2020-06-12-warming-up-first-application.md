@@ -5,6 +5,8 @@ date:   2020-06-12 23:48:17 +0200
 categories: ruby gtk
 ---
 
+![My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
+
 If you installed the gtk3 gem using the command:
 
 {% highlight bash %}
@@ -14,7 +16,7 @@ gem install gtk3
 You are ready to create the first GTK3 application.
 Create a new file named **warming-up.rb** and type the following commands
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 #!/usr/bin/env ruby
 
 require "gtk3"
@@ -41,12 +43,10 @@ Now we can run it:
 ./warming-up.rb
 {% endhighlight %}
 
-If you typed the code correctly and the gtk gem was well installed you should be seeing something like this:
+If you typed the code correctly and the gtk gem was well installed you should be seeing something that looks like the aside image.
+You did well, the application is running and you build your first ruby gtk application.
 
-![My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
-
-It means you did well, the application is running and you build your first ruby gtk application.
-Congratulations!!
+**Congratulations!!**
 
 Let's see what have we type line by line.
 
@@ -55,9 +55,16 @@ The shebang in the first line helps us to define which interpreter must be used 
 ### First code block
 We import the gtk3 library.
 
+{% highlight ruby %}
+require "gtk3"
+{% endhighlight %}
+
 ### Second code block
 We initialize a new application writing: 
+
+{% highlight ruby %}
 app = Gtk::Application.new("org.rubygtkfun.warmingup", :flags_none)
+{% endhighlight %}
 
 The initializer takes two parameters:
 
@@ -67,4 +74,28 @@ The initializer takes two parameters:
 
 ### Third code block
 The following block of code connect the application [signal](http://ruby-gnome.sourceforge.net/programming/signal.html) named **activate** to the following commands. Gtk library is driven by signals. Gtk programming consists, in large part, in setting signals handlers. When the **activate** signal is received the following lines of code create a new window, give to this window a title and a size and show the window.
+
+{% highlight ruby %}
+app.signal_connect "activate" do |application|
+  window = Gtk::ApplicationWindow.new(application)
+  window.set_title("My first window")
+  window.set_default_size(400, 400)
+  window.show_all
+end
+{% endhighlight %}
+
+### Forth code block
+
+The last instruction runs the application and writes the console output on the terminal.
+
+{% highlight ruby %}
+puts app.run
+{% endhighlight %}
+
+### Final considerations
+
+This was our first application, the "hello world" application, I hope the explanation was useful and clear for you.
+
+See you next time.
+
 
