@@ -7,7 +7,7 @@ categories: ruby gtk
 
 ![My first window](/rubygtkfun/images/posts/warming-up.png){:class="aside-image"}
 
-Before we sturt just make sure you installed gtk3 gem on your system and type the command:
+Before we start we want to be sure we installed gtk3 gem on our system.
 
 {% highlight bash %}
 gem install gtk3
