@@ -66,7 +66,7 @@ You can use the method **text=** and you can set the text as you wish.
 
 ### Getting text from a table
 
-How can you get the text that is contained in a lable?
+How can you get the text that is contained in a label?
 
 {% highlight ruby %}
 label = Gtk::Label.new 'My brand new label'
@@ -80,7 +80,7 @@ The last line of code gets the text contained in the label and print it on the c
 
 ### Conclusion
 
-Many thigs can be said about the label, our exploration just started.
+Many things can be said about the label, our exploration just started.
 If you give the command **puts label.methods**:
 
 {% highlight ruby %}
@@ -88,7 +88,7 @@ label = Gtk::Label.new 'My brand new label'
 puts label.methods
 {% endhighlight %}
 
-You'll find there is a pletora of methods this widget can use to perform many tasks.
+You'll find there is a plethora of methods this widget can use to perform many tasks.
 We just scratched the surface.
 
 See you next time!
