@@ -82,7 +82,7 @@ entry.signal_connect "key-release-event" do |w, e|
 end
 {% endhighlight %}
 
-We said in the first post that gtk3 programming is all about connecting events to functions or methods. The two lines of code you see above are there to intercept the event **key-release-event** to the function named **on_key_release** and defined at the very start of the code.
+We said in the first post that gtk3 programming is all about connecting events to functions or methods. The two lines of code you see above are there to intercept the event **key-release-event** and call the function named **on_key_release** and defined at the very start of the code.
 
 This function just write (puts) the text contained in the widget, an entry in this case, that sent the signal.
 
