@@ -4,8 +4,6 @@
 layout: home
 ---
 
-# GTK and Ruby
-
 GTK is the foundation of Gnome environment.
 It is the library that makes possible to create all the amazing Gnome applications.
 
