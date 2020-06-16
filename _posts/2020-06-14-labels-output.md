@@ -78,7 +78,7 @@ The **text** method will help you with that.
 
 The last line of code gets the text contained in the label and print it on the console.
 
-### Conclusion
+### Conclusions
 
 Many thigs can be said about the label, our exploration just started.
 If you give the command **puts label.methods**:
