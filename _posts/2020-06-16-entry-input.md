@@ -74,6 +74,26 @@ The API of gtk3 is really well designed and easy to use.
 
 Be careful, the setting method is called **text=** so if you are trying to write **entry.text = 'my new text'** you are going to receive an error message
 
+### Connecting signals
+
+{% highlight ruby %}
+entry.signal_connect "key-release-event" do |w, e|
+  on_key_release w, e
+end
+{% endhighlight %}
+
+We said in the first post that gtk3 programming is all about connecting events to functions or methods. The two lines of code you see above are there to intercept the event **key-release-event** to the function named **on_key_release** and defined at the very start of the code.
+
+This function just write (puts) the text contained in the widget, an entry in this case, that sent the signal.
+
+{% highlight ruby %}
+def on_key_release sender, event
+  puts sender.text
+end
+{% endhighlight %}
+
+In the image aside you can see that I was typing some text and that method was called every time I released a button of my keyboard. You can see the text increasing as I was typing.
+
 ### Conclusions
 
 We can input information and output information, next step will be about how to use a button.
