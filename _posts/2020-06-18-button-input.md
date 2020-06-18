@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Button widget and input"
-date:   2020-06-16 12:00:00 +0200
+date:   2020-06-18 12:00:00 +0200
 categories: basics
 tags: input button
 ---
