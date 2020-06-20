@@ -8,8 +8,8 @@ tags: box container
 
 ![Entry widget](/rubygtkfun/images/posts/box.png){:class="aside-image"}
 
-Up to now we learned how to use some basic widget, we learned how to initialize an Entry, a Label 
-and a Button. It is time for us to learn how to position **widgets** in a window.
+Up to now, we learned how to use some basic widget, we learned how to initialize an Entry, a Label, or a Button. 
+It is time for us to learn how to position **widgets** in a window.
 
 We need to learn to use **containers**.
 
@@ -19,7 +19,7 @@ in a window.
 
 Today we are going to introduce the **Box**.
 
-The Box container allow me to position a set of widgets in a row. The row can be vertical or horizontal.
+The Box container allows me to position a set of widgets in a row. The row can be vertical or horizontal.
 
 {% highlight ruby %}
 #!/usr/bin/ruby
@@ -84,12 +84,12 @@ puts app.run
 
 ### Let's start defining the application
 
-Something has changed from last application we built.
+Something has changed from the last application we built.
 Our logic is becoming more and more complicated, we need organization.
 
 We created a class named **Application** that inherits from Gtk::Application.
 
-At the end of the scritp you can see that we are going to instantiate that class and run it.
+At the end of the script, you can see that we are going to instantiate that class and run it.
 
 All windgets we are going to use are going to become attributes of this class.
 
@@ -131,7 +131,7 @@ the following methods.
 
 ### Events events.. events
 
-We need to handle the events in order to control the behaviour of the application.
+We need to handle the events in order to control the behavior of the application.
 I this case I linked the signal **clicked** to the **Application** method call **on_btn_clicked**.
 
 {% highlight ruby %}
@@ -144,7 +144,7 @@ end
 end
 {% endhighlight %}
 
-This method take the sender label (label contained in the button) and set the @label text accordingly.
+This method takes the sender label (label contained in the button) and set the @label text accordingly.
 
 {% highlight ruby %}
 def on_btn_clicked sender, event
@@ -156,6 +156,6 @@ end
 ### Conclusions
 
 Things are becomeming more interesting now.
-We are able to mix some widget and some behaviour in a functioning App.
+We are able to mix some widget and some behavior in a functioning App.
 
 See you next time.
