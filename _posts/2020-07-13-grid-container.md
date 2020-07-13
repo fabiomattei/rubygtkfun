@@ -104,9 +104,23 @@ The Gtk.Grid.attach() method takes five parameters:
 * top indicates the row number to attach the top side of child to.
 * width and height indicate the number of columns that the child will span, and the number of rows that the child will span, respectively.
 
+{% highlight ruby %}
+@hello_button = Gtk::Button.new :label => "Hello"
+grid.attach @hello_button, 0, 0, 1, 1 # child, left, top, width, height
+{% endhighlight %}
+
+In this example we are creating a button having label "Hello" that is positioned in the grid at cohordinates
+
+* left: 1
+* top: 1
+
+and the cell has properties
+
+* width: 1
+* height: 1
+ 
 ### Adding widgets to the grid: second way
      
-
 It is also possible to add a child next to an existing child, using **attach_next_to**, which also takes five parameters:
 
 * child is the Gtk.Widget to add, as above.
