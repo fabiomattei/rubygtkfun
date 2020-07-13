@@ -6,7 +6,7 @@ categories: basics
 tags: grid container
 ---
 
-![Entry widget](/rubygtkfun/images/posts/box.png){:class="aside-image"}
+![Entry widget](/rubygtkfun/images/posts/grid.png){:class="aside-image"}
 
 [Gtk.Grid](https://developer.gnome.org/gtk3/stable/GtkGrid.html) is a container which arranges its child widgets in something that behaves like a table.
 This table is composed by rows and columns and it extends automatically to needed dimentions.
