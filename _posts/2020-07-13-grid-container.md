@@ -109,12 +109,12 @@ The Gtk.Grid.attach() method takes five parameters:
 grid.attach @hello_button, 0, 0, 1, 1 # child, left, top, width, height
 {% endhighlight %}
 
-In this example we are creating a button having label "Hello" that is positioned in the grid at cohordinates
+In this example we are creating a button having label "Hello" that is positioned in the grid at cohordinates (first top left cell)
 
-* left: 1
-* top: 1
+* left: 0
+* top: 0
 
-and the cell has properties
+and the cell has the following dimentions in terms of room taken in the grid
 
 * width: 1
 * height: 1
