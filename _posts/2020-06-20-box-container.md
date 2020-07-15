@@ -22,7 +22,7 @@ Today we are going to introduce the **Box**.
 The Box container allows me to position a set of widgets in a row. The row can be vertical or horizontal.
 
 {% highlight ruby %}
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 '''
 This example demonstrates the Gtk::Box container.

@@ -15,7 +15,7 @@ In the image you see aside the **Buttons widget** is as big as the containing wi
 Let's see an example together.
 
 {% highlight ruby %}
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 require 'gtk3'
 
