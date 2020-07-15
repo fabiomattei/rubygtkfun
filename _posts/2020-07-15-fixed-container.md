@@ -19,7 +19,7 @@ Using **GtkFixed** the user could experience: truncated text, overlapping widget
 #!/usr/bin/env ruby
 
 '''
-This example demonstrates the Gtk::Grid container.
+This example demonstrates the Gtk::Fixed container.
 
 Author: Fabio Mattei
 Website: https://fabiomattei.github.io/rubygtkfun
@@ -99,7 +99,7 @@ I did that in order to be able to use the **move** method later on.
 ### Adding widgets to the fixed container
 
 Children are added using the method **put**.
-The Gtk.Grid.attach() method takes tree parameters:
+The Fixed.put method takes tree parameters:
 
 * The child parameter is the Gtk.Widget to add.
 * x coordinate relative to top left container corner
