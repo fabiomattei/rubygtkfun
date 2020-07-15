@@ -38,7 +38,7 @@ class Application < Gtk::Application
     signal_connect :activate do |application|
       window = Gtk::ApplicationWindow.new application
       window.set_default_size 300, 150
-      window.set_title 'Example of a grid container'
+      window.set_title 'Example of a fixed container'
 
       @fixed = Gtk::Fixed.new
       window.add @fixed
