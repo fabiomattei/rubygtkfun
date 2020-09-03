@@ -15,7 +15,7 @@ In the image you see aside the **Entry widget** is as big as the containing wind
 Let's see an example together.
 
 {% highlight ruby %}
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 require 'gtk3'
 
