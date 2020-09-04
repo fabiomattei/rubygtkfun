@@ -64,31 +64,21 @@ puts app.run
 
 {% endhighlight %}
 
+This code is minimal and it is there only to show how to instantiate a combobox and how to insert it in a window.
 
-
-
-
-
-
-
-
-
-The code you see here is so similar to the code you have seen in the [previous article](www.example.com), I added just two more lines.
-
-
-### Adding a label
+### Adding a combobox
 
 {% highlight ruby %}
-label = Gtk::Label.new 'My brand new label'
-window.add label
+cb = Gtk::ComboBoxText.new
+window.add cb
 {% endhighlight %}
 
-Writing two lines of code we added a label to the window.
-You can see it in the center of the window, it has some text as content: "My brand new label"
+How you can see, in order to instantiate a **ComboBox**, I need to call the contructor of GTK ComboBoxText class.
 
-The first line of code creates an instance of a Label widget and set its text to "My brand new label".
+Once I have done that I need to **add** this new **ComboBox** to the current window.
 
-The second line of code add the label to the window.
+
+
 
 ### Setting text of an already created label
 
