@@ -8,20 +8,23 @@ tags: output combobox widget
 
 ![My first combobox](/rubygtkfun/images/posts/label.png){:class="aside-image"}
 
-Nothing is better of a combobox to allow the user to chose an option between a set of options!
+Nothing is better of a combobox to allow the user to choose an option between a set of possible values!
 
 Let's start from the beginning.
 
-Imagine you are building an application where the user has select 
+Imagine you are building an application where the user has select the operating system he is currently using.
+There is a finite set off possible values the user can select:
+
+* Linux
+* Windows
+* Mac Os
+
 That is a typical case of choosing between a selection.
 
+There is a number of ways we can ask this information to a user in a software interface, one of the most effective ways is using 
+a combo box.
 
-
-
-
-Sometimes we need to give some information to a user, we need to send some output or we need just to write some text in order to help him using the interface.
-
-This is when the label widget becomes handy.
+Let's check some code out.
 
 {% highlight ruby %}
 #!/usr/bin/env ruby
