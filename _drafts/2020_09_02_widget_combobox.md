@@ -6,7 +6,7 @@ categories: basics
 tags: output combobox widget
 ---
 
-![My first combobox](/rubygtkfun/images/posts/label.png){:class="aside-image"}
+![My first combobox](/rubygtkfun/images/posts/combobox.png){:class="aside-image"}
 
 Nothing is better of a combobox to allow the user to choose an option between a set of possible values!
 
@@ -31,15 +31,31 @@ Let's check some code out.
 
 require 'gtk3'
 
-app = Gtk::Application.new("org.rubygtkfun.label", :flags_none)
+app = Gtk::Application.new("org.rubygtkfun.combobox", :flags_none)
+
+def on_key_release sender, event
+  puts sender.text
+end
 
 app.signal_connect "activate" do |application|
   window = Gtk::ApplicationWindow.new application
-  window.set_title "My first window with a label"
-  window.set_default_size 400, 400
+  window.set_title "My first window with a combo box"
+  window.set_default_size 400, 100
 
-  label = Gtk::Label.new 'My brand new label'
-  window.add label
+  cb = Gtk::ComboBoxText.new
+  cb.signal_connect "changed" do |w, e|
+    on_changed w, e
+  end
+
+  cb.append_text 'Linux'
+  cb.append_text 'Windows'
+  cb.append_text 'Mac Os'
+
+  window.add cb
+
+  def on_changed sender, event
+    puts sender.active_text
+  end
 
   window.show_all
 end
@@ -47,6 +63,14 @@ end
 puts app.run
 
 {% endhighlight %}
+
+
+
+
+
+
+
+
 
 
 The code you see here is so similar to the code you have seen in the [previous article](www.example.com), I added just two more lines.
