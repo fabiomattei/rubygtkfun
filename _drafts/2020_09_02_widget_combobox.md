@@ -77,46 +77,65 @@ How you can see, in order to instantiate a **ComboBox**, I need to call the cont
 
 Once I have done that I need to **add** this new **ComboBox** to the current window.
 
+### Adding items to a combobox
 
+The GTK ComboBoxText class has a method that allows to introduce items, the method is named **append_text**.
+Items are importante because represents the set of possible choiches the user will be able to select.
+Items can be strings like the following ones:
 
+* Linux
+* Windows
+* Mac Os
 
-### Setting text of an already created label
-
-What can you do if you want to set the text of a label that is already being instantiated before?
-
-{% highlight ruby %}
-label = Gtk::Label.new 'My brand new label'
-window.add label
-label.text= 'Hello world'
-{% endhighlight %}
-
-You can use the method **text=** and you can set the text as you wish.
-
-### Getting text from a table
-
-How can you get the text that is contained in a label?
+Previously we defined the instance **cb**, that allows us to write:
 
 {% highlight ruby %}
-label = Gtk::Label.new 'My brand new label'
-window.add label
-puts label.text
+cb.append_text 'Linux'
+cb.append_text 'Windows'
+cb.append_text 'Mac Os'
 {% endhighlight %}
 
-The **text** method will help you with that.
+### Getting the selected item from a combo box
 
-The last line of code gets the text contained in the label and print it on the console.
+Once the user selected an item from a combo box it is important to have access to that information in order to use it 
+in the proceeding of the program.
+
+The method **active_text** gives us access to that information.
+
+We can use an assignment in order to store that information in a variable and use it later.
+
+{% highlight ruby %}
+myitem = cb.active_text
+{% endhighlight %}
+
+
+### 'changed' signal
+
+Sometimes it is important to detect if the user changed his mind and made a new selection in the combo box.
+
+It is possible for a Gtk ComboBox instance to trigger a signal named **changed**. 
+
+We can intercept the signal as you see here:
+
+{% highlight ruby %}
+cb.signal_connect "changed" do |w, e|
+  on_changed w, e
+end
+{% endhighlight %}
+
+
+
+{% highlight ruby %}
+def on_changed sender, event
+  puts sender.active_text
+end
+{% endhighlight %}
 
 ### Conclusions
 
-Many things can be said about the label, our exploration just started.
-If you give the command **puts label.methods**:
 
-{% highlight ruby %}
-label = Gtk::Label.new 'My brand new label'
-puts label.methods
-{% endhighlight %}
 
-You'll find there is a plethora of methods this widget can use to perform many tasks.
-We just scratched the surface.
 
-See you next time!
+
+
+
