@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Combobox"
-date:   2020-09-02 12:00:00 +0200
+date:   2020-09-05 12:00:00 +0200
 categories: basics
 tags: output combobox widget
 ---
@@ -123,7 +123,8 @@ cb.signal_connect "changed" do |w, e|
 end
 {% endhighlight %}
 
-
+In this case when the singnal is intercepted we call the method **on_changed**. 
+This method takes all information he needs in order to print the selected item.
 
 {% highlight ruby %}
 def on_changed sender, event
@@ -133,9 +134,8 @@ end
 
 ### Conclusions
 
+We have a new tool in our belt. It is important to use the right tool for he right purpose and the combobox 
+is a tool really helpful sometimes.
 
-
-
-
-
+See you next time.
 
