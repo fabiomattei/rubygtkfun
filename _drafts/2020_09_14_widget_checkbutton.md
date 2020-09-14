@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Combobox"
-date:   2020-09-05 12:00:00 +0200
+title:  "Check Button"
+date:   2020-09-20 12:00:00 +0200
 categories: basics
-tags: output combobox widget
+tags: input checkbutton widget
 ---
 
-![My first combobox](/rubygtkfun/images/posts/combobox.png){:class="aside-image"}
+![My first combobox](/rubygtkfun/images/posts/checkbutton.png){:class="aside-image"}
 
-Nothing is better than a combobox to allow the user to choose an option between a set of possible values!
+Nothing is better of a combobox to allow the user to choose an option between a set of possible values!
 
 Let's start from the beginning.
 
